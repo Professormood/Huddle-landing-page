@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.7.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="./main/output.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>
+      Frontend Mentor | Huddle landing page with alternating feature blocks
+    </title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <section class="bg-VeryPaleCyan bg-[url('/images/bg-hero-desktop.svg')]">
+      <!-- nav -->
+      <nav class="container mx-auto py-10 px-3 md:px-0">
+        <!-- flex container nav -->
+        <div class="flex flex-row justify-between items-center md:">
+          <img src="./images/logo.svg" alt="" class="w-[10rem] md:w-auto" />
+          <button
+            class="shadow-lg px-5 py-3 text-sm font-semibold bg-[#ffffff] text-VeryDarkCyan hover:opacity-70 transition duration-200 rounded-2xl md:px-14"
+          >
+            Try It Free
+          </button>
+        </div>
+      </nav>
+      <!-- Hero Section -->
+      <div
+        class="flex flex-col mx-auto container justify-center gap-7 my-10 items-center space-x-10 md:justify-between md:space-y-0 md:flex-row md:space-x-10"
+      >
+        <!-- left side -->
+        <div
+          class="flex flex-col justify-center items-center text-center space-y-5 px-5 md:px-0 md:items-start md:text-start"
+        >
+          <h1 class="text-3xl text-VeryDarkCyan font-medium md:text-5xl">
+            Build The Community Your Fans Will Love
+          </h1>
+          <p
+            class="text-VeryDarkCyan text-lg max-w-3xl items-center md:text-start"
+          >
+            Huddle re-imagines the way we build communities. You have a voice,
+            but so does your audience. Create connections with your users as you
+            engage in genuine discussion.
+          </p>
+          <button
+            class="bg-Pink text-VeryPaleCyan py-4 px-16 text-[0.9rem] font-semibold rounded-full hover:opacity-80 transition duration-200"
+          >
+            Get Started For Free
+          </button>
+        </div>
+        <!-- right image  -->
+        <div class="px-3 md:px-0">
+          <img src="./images/illustration-mockups.svg" alt="" />
+        </div>
+      </div>
+    </section>
+    <main>
+      <!-- Grow Section  1-->
+      <section class="py-16 px-10">
+        <!-- flex container -->
+        <div
+          class="flex flex-col-reverse justify-between items-center mx-auto container rounded-2xl max-w-[80rem] gap-10 shadow-2xl px-5 py-10 text-center md:text-start md:flex-row md:py-10 md:px-28"
+        >
+          <!-- grow content -->
+          <div
+            class="flex flex-col justify-center items-center md:items-start space-y-4"
+          >
+            <h1 class="text-2xl text-VeryDarkCyan font-semibold md:text-2xl">
+              Grow Together
+            </h1>
+            <p class="text-GrayishBlue text-base">
+              Generate meaningful discussions with your audience and build a
+              strong, loyal community. Think of the insightful conversations you
+              miss out on with a feedback form.
+            </p>
+          </div>
+          <!-- right image -->
+          <div>
+            <img src="./images/illustration-grow-together.svg" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Grow Section  2-->
+      <section class="py-16 px-10">
+        <!-- flex container -->
+        <div
+          class="flex flex-col-reverse justify-between items-center mx-auto container rounded-2xl max-w-[80rem] gap-10 shadow-2xl px-5 py-10 text-center md:text-start md:flex-row-reverse md:py-10 md:px-28"
+        >
+          <!-- grow content -->
+          <div
+            class="flex flex-col justify-center items-center md:items-start space-y-4"
+          >
+            <h1 class="text-2xl text-VeryDarkCyan font-semibold md:text-2xl">
+              Flowing Conversations
+            </h1>
+            <p class="text-GrayishBlue text-base">
+              You wouldn't paginate a conversation in real life, so why do it
+              online? Our threads have just-in-time loading for a more natural
+              flow.
+            </p>
+          </div>
+          <!-- right image -->
+          <div>
+            <img src="./images/illustration-flowing-conversation.svg" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Grow Section 3 -->
+      <section class="py-16 px-10">
+        <!-- flex container -->
+        <div
+          class="flex flex-col-reverse justify-between items-center mx-auto rounded-2xl container max-w-[80rem] gap-10 shadow-xl px-5 py-10 text-center md:text-start md:flex-row md:py-10 md:px-28"
+        >
+          <!-- grow content -->
+          <div
+            class="flex flex-col justify-center items-center md:items-start space-y-4"
+          >
+            <h1 class="text-2xl text-VeryDarkCyan font-semibold md:text-2xl">
+              Your Users
+            </h1>
+            <p class="text-GrayishBlue text-base">
+              It takes no time at all to integrate Huddle with your app's
+              authentication solution. This means, once signed in to your app,
+              your users can start chatting immediately.
+            </p>
+          </div>
+          <!-- right image -->
+          <div>
+            <img src="./images/illustration-your-users.svg" alt="" />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="relative bg-VeryDarkCyan  justify-center items-center px-10 py-20 mt-16">
+      <!-- flex container -->
+      <!--community   -->
+      <div class="bg-[#ffff] absolute -top-[70px] rounded-lg right-[rem] shadow-inner px-6 py-5 space-y-5  text-center md:w-[45rem] md:py-10 md:px-16 md:right-[35rem]">
+        <h1 class="text-lg md:text-3xl font-medium">Ready To Build Your Community?</h1>
+        <button class="bg-Pink text-VeryPaleCyan py-4 px-10 text-[0.9rem] font-semibold rounded-full hover:opacity-80 transition duration-200 md:px-16 md:py-4">Get Started For Free</button>
+      </div>
+      <div class="mx-auto container py-16 px-0  gap-5">
+        <img src="./images/logo-white.svg" alt="" class="fill-gray-900">
+      <div class="flex mt-10 flex-col md:flex-row space-y-2  justify-between items-start text-VeryPaleCyan md:space-y-0 ">
+        <!-- Contact -->
+        <ul class="flex flex-col max-w-lg space-y-2">
+          <li class="flex flex-row gap-2"><i class="ri-map-pin-2-fill"></i><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+            incididunt ut labore et dolore magna aliqua</p></li>
+          <li><i class="ri-phone-fill text-xl"></i> +1-543-123-4567</li>
+          <li><i class="ri-mail-line text-xl"></i> example@huddle.com</li>
+        </ul>
+        <!-- About -->
+        <ul class="space-y-2 cursor-pointer pb-4 pt-4 md:space-y-5 md:pb-0 md:pt-0">
+          <li>ABOUT US</li>
+          <li>What We Do</li>
+          <li>FAQ</li>
+        </ul>
+        <!-- career -->
+        <ul class="space-y-2 cursor-pointer md:space-y-5 pb-4 md:pb-0">
+          <li>Career</li>
+          <li>Blog</li>
+          <li>Contact Us</li>
+        </ul>
+        <!-- socail links -->
+        <ul class="flex flex-row space-x-4 text-[1.5rem] cursor-pointer">
+          <li class="border rounded-full px-1.5"><i class="ri-facebook-line"></i></li>
+          <li class="border rounded-full px-1.5"><i class="ri-twitter-fill"></i></li>
+          <li class="border rounded-full px-1.5"><i class="ri-instagram-line"></i></li>
+        </ul>
+      </div>
+      </div>
+    </footer>
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </p>
+    </footer>
+  </body>
+</html>
